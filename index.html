@@ -13,7 +13,27 @@
             max-width: 280px;
             display: inline-block;
             width: 15rem;
+            min-height: 230px;
+            position: relative;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            overflow: hidden;
         }
+
+        .enemy-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+        }
+
+        .enemy-card > * {
+            position: relative;
+            z-index: 1; 
+        }
+
         .enemy-title {
             font-size: 1.3em;
             font-weight: bold;
@@ -5130,6 +5150,11 @@ let enemies = {
         title.className = "enemy-title";
         title.textContent = enemy.name;
         div.appendChild(title);
+
+        div.style.backgroundImage = `url(img/${enemy.tex})`;
+        div.style.backgroundSize = "contain";
+        div.style.backgroundRepeat = "no-repeat";
+        div.style.backgroundPosition = "right";
 
         const statSections = {
             "0": [], // Active
