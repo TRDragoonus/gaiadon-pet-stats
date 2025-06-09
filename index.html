@@ -7,7 +7,7 @@
         .enemy-card {
             background: #222;
             border: 2px solid #0f0;
-            margin: 10px 0;
+            margin: 10px 2px;
             padding: 10px 15px;
             border-radius: 8px;
             max-width: 280px;
@@ -21,6 +21,7 @@
             overflow: hidden;
         }
 
+
         .enemy-card::before {
             content: "";
             position: absolute;
@@ -28,6 +29,8 @@
             background-color: rgba(0, 0, 0, 0.5); 
             z-index: 0;
         }
+
+
 
         .enemy-card > * {
             position: relative;
@@ -40,12 +43,61 @@
             margin-bottom: 6px;
             text-align: center;
         }
+		.enemy-rarity {
+			text-align: center;
+			width: fit-content;
+			margin: auto;
+			padding: 3px;
+			border-radius: 10px;
+			position: absolute;
+			bottom: 2px;
+			right: 2px;
+		}
+
+		.tier-0 {
+			border: 2px solid rgba(240, 240, 240, 0.8);
+		}
+		.tier-1 {
+			border: 2px solid rgba(174, 44, 57, 0.8);
+		}
+		.tier-2 {
+			border: 2px solid rgba(148, 44, 148, 0.8);
+		}
+		.tier-3 {
+			border: 2px solid rgba(248, 120, 42, 0.8);
+		}
+		.tier-4 {
+			border: 2px solid rgba(177, 45, 58, 0.8);
+		}
+		.tier-5 {
+			border: 2px solid rgba(31, 30, 30, 0.8);
+		}
+		.tier-0-background {
+			background-color: rgba(240, 240, 240, 0.8);
+			color: black;
+		}
+		.tier-1-background {
+			background-color: rgba(174, 44, 57, 0.8);
+		}
+		.tier-2-background {
+			background-color: rgba(148, 44, 148, 0.8);
+		}
+		.tier-3-background {
+			background-color: rgba(248, 120, 42, 0.8);
+		}
+		.tier-4-background {
+			background-color: rgba(177, 45, 58, 0.8);
+		}
+		.tier-5-background {
+			background-color: rgba(31, 30, 30, 0.8);
+		}
+
         .section-header {
-            border-top: 1px solid #666;
+            border-top: 1px solid #dfd8d8;
             margin: 10px 0 4px;
             padding-top: 4px;
             font-size: 0.95em;
-            color: #aaa;
+            color: #dfd8d8;
             text-align: center;
         }
         .stat-row {
@@ -5173,14 +5225,21 @@ let enemies = {
 
     const container = document.getElementById("enemy-list");
 
+	const rarities = ["Normal", "Elite", "Champion", "Fiend", "Demon", "Titan"]
+
     Object.values(enemies).forEach(enemy => {
         const div = document.createElement("div");
-        div.className = "enemy-card";
+		div.className = `enemy-card tier-${enemy.pet_base_tier}`;		
 
         const title = document.createElement("div");
-        title.className = "enemy-title";
+        title.className = `enemy-title`;
         title.textContent = enemy.name;
         div.appendChild(title);
+
+        const rarity = document.createElement("div");
+        rarity.className = `enemy-rarity tier-${enemy.pet_base_tier}-background`;
+        rarity.textContent = rarities[enemy.pet_base_tier];
+        div.appendChild(rarity);
 
         div.style.backgroundImage = `url(img/${enemy.tex})`;
         div.style.backgroundSize = "contain";
