@@ -85,26 +85,26 @@
     },
     "151": {
         "name": "Clytaemestra",
-        "location": "Any M3 Faction",
+        "location": "Any M3 Faction"
     },
     "153": {
         "name": "Shikao",
-        "location": "Any M4 Faction",
+        "location": "Any M4 Faction"
     },
     "155": {
         "name": "Malakar",
-        "location": "Any T1 Faction",
+        "location": "Any T1 Faction"
     },
     "156": {
         "name": "Eldertide Sentinel",
-        "location": "Any T1 Faction",
+        "location": "Any T1 Faction"
     },
     "157": {
         "name": "Sir Denori of Doom",
-        "location": "Any T1 Faction",
+        "location": "Any T1 Faction"
     },
     "160": {
         "name": "Fen the Devourer",
-        "location": "Any T1 Faction",
+        "location": "Any T1 Faction"
     }
 }
