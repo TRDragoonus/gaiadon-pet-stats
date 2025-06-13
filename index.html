@@ -4,9 +4,45 @@
 	<meta charset="UTF-8">
     <title>Gaiadon Pet Stats</title>
     <style>
-        body { font-family: sans-serif; background: #111; color: #eee; padding: 20px; }
+        
+		body.light-mode {
+			--bg-color: #f0f0f0;
+			--text-color: #111;
+			--card-bg: #fff;
+			--enemy-overlay: rgba(255, 255, 255, 0.5);
+			--header-color: black;
+			--button-bg: #e0e0e0;
+			--button-text: #111;
+			--button-border: #ccc;
+			--button-hover-bg: #d0d0d0;
+		}
+		body.dark-mode {
+			--bg-color: #111;
+			--text-color: #eee;
+			--card-bg: #222;
+			--enemy-overlay: rgba(0, 0, 0, 0.5);
+			--header-color: #dfd8d8;
+			--button-bg: #333;
+			--button-text: #fff;
+			--button-border: #666;
+			--button-hover-bg: #444;
+		}
+
+		body {
+			background-color: var(--bg-color);
+			color: var(--text-color);
+			transition: background-color 0.2s, color 0.2s;
+			padding: 20px;
+			font-family: sans-serif;
+		}
+
+		#enemy-list {
+			text-align: center;
+		}
+
         .enemy-card {
-            background: #222;
+            background-color: var(--card-bg);
+			transition: background-color 0.2s;
             border: 2px solid #0f0;
             margin: 10px 2px;
             padding: 10px 15px;
@@ -14,7 +50,7 @@
             max-width: 280px;
             display: inline-block;
             width: 15rem;
-            min-height: 230px;
+            min-height: 266px;
             position: relative;
             background-size: contain;
             background-repeat: no-repeat;
@@ -27,7 +63,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background-color: rgba(0, 0, 0, 0.5); 
+            background-color: var(--enemy-overlay);
             z-index: 0;
         }
 
@@ -55,6 +91,9 @@
 			display: block; 
 			margin-bottom: 4px;
 		}
+		.enemy-location::before {
+			content: '';
+		}
 		.enemy-extras {
 			margin-top: 4px;
 			display: block;
@@ -67,6 +106,12 @@
 			padding: 2px 6px;
 			border-radius: 4px;
 			font-size: 0.9em;
+		}
+		.enemy-kills::before {
+			content: '💀';
+		}
+		.enemy-wt::before {
+			content: '🌐';
 		}
 
 		.tier-0 {
@@ -105,29 +150,70 @@
 		}
 		.tier-5-background {
 			background-color: rgba(31, 30, 30, 0.8);
+			color: #fff;
 		}
 
         .section-header {
-            border-top: 1px solid #dfd8d8;
+            border-top: 1px solid var(--header-color);
             margin: 10px 0 4px;
             padding-top: 4px;
             font-size: 0.95em;
-            color: #dfd8d8;
+            color: var(--header-color);
             text-align: center;
         }
         .stat-row {
             display: flex;
-            justify-content: space-between;
             font-family: monospace;
             font-size: 0.95em;
             margin: 2px 0;
         }
+		.hide-monsters .enemy-card {
+	    	background-image: none !important;
+		}
+
+		#themeToggle {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			font-size: 24px;
+			padding: 8px 12px;
+			border: none;
+			border-radius: 50%;
+			background-color: var(--card-bg);
+			color: var(--text-color);
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+			cursor: pointer;
+			transition: background-color 0.3s, color 0.3s, transform 0.2s;
+			z-index: 999;
+		}
+		#themeToggle:hover {
+			transform: scale(1.1);
+		}
+
+		button {
+			background-color: var(--button-bg);
+			color: var(--button-text);
+			border: 1px solid var(--button-border);
+			border-radius: 6px;
+			padding: 6px 12px;
+			font-size: 0.9rem;
+			cursor: pointer;
+			transition: background-color 0.2s, border-color 0.2s;
+		}
+
+		button:hover {
+			background-color: var(--button-hover-bg);
+		}
     </style>
 </head>
 <body>
-
+<div style="text-align: center;">
 <h2>Pet Stats Viewer</h2>
-<input type="text" id="enemy-filter" placeholder="Search pets..." style="padding: 8px; width: 100%; max-width: 300px; margin-bottom: 15px; font-size: 1em;" />
+<input type="text" id="enemy-filter" placeholder="Search pets..." style="padding: 8px; width: 100%; max-width: 300px; margin-bottom: 15px; font-size: 1em;" /><br>
+</div>
+<button id="toggleImages" style="position: sticky; top: 10px; display: block; margin: auto; z-index: 100;">Toggle Monster Images</button>
+<button id="themeToggle" aria-label="Toggle theme">🌙</button>
+
 <div id="enemy-list"></div>
 
 <script>
@@ -624,7 +710,9 @@ let stats = {
 			});
 		});
 
-		Object.values(enemies).forEach(enemy => {
+		Object.entries(enemies)
+			.sort(([idA], [idB]) => parseInt(idA) - parseInt(idB))
+			.forEach(([id, enemy]) => {
 			const div = document.createElement("div");
 			div.className = `enemy-card tier-${enemy.pet_base_tier}`;
 
@@ -688,7 +776,7 @@ let stats = {
 				const killDiv = document.createElement("div");
 				killDiv.className = `enemy-kills`;
 				killDiv.title = `Base kills required`;
-				killDiv.textContent = `💀${killsNeeded.toLocaleString()}`;
+				killDiv.textContent = `${killsNeeded.toLocaleString()}`;
 				extras.appendChild(killDiv);
 				hasExtras = true;
 			}
@@ -697,7 +785,7 @@ let stats = {
 				const wtdiv = document.createElement("div");
 				wtdiv.className = `enemy-wt`;
 				wtdiv.title = `World tier required`;
-				wtdiv.textContent = `🌐${wt}`;
+				wtdiv.textContent = `${wt}`;
 				extras.appendChild(wtdiv);
 				hasExtras = true;
 			}
@@ -727,6 +815,30 @@ let stats = {
             card.style.display = text.includes(filter) ? 'inline-block' : 'none';
         });
     });
+
+document.getElementById("toggleImages").addEventListener("click", () => {
+    document.body.classList.toggle("hide-monsters");
+});	
+
+const themeButton = document.getElementById("themeToggle");
+
+function applyTheme(theme) {
+    document.body.classList.toggle("dark-mode", theme === "dark");
+    document.body.classList.toggle("light-mode", theme === "light");
+    themeButton.textContent = theme === "dark" ? "☀️" : "🌙";
+    localStorage.setItem("theme", theme);
+}
+
+const savedTheme = localStorage.getItem("theme");
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+applyTheme(savedTheme || (prefersDark ? "dark" : "light"));
+
+themeButton.addEventListener("click", () => {
+    const isDark = document.body.classList.contains("dark-mode");
+    applyTheme(isDark ? "light" : "dark");
+});
+
+
 </script>
 
 </body>
