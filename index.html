@@ -585,9 +585,19 @@ let stats = {
 		const factions = incursionData.factions;
 		const factionEnemies = incursionData.faction_enemy_ids;
 		const factionEnemyData = incursionData.enemies;
+		const factionEnemyTiers = incursionData.ranks_world_tier;
 		const enemyKillsRequired = {};
 		const manualData = JSON.parse(manualJSON);
+		const wtEnemies = {};
 
+		Object.entries(factionEnemyData).forEach(([factionId, group]) => {
+			Object.entries(group).forEach(([secondIndex, enemyBlock]) => {
+				const wt = factionEnemyTiers[secondIndex]?.min_tier;
+				Object.keys(enemyBlock).forEach(enemyId => {
+					wtEnemies[enemyId] = wt ?? null;
+				});
+			});
+		});
 		Object.values(factionEnemyData).forEach(factionBlock => {
 			Object.values(factionBlock).forEach(entry => {
 				Object.entries(entry).forEach(([enemyId, enemyData]) => {
@@ -627,7 +637,7 @@ let stats = {
 			rarity.textContent = rarities[enemy.pet_base_tier];
 			div.appendChild(rarity);
 
-			const wt = manualData[enemy.idx]?.wt;
+			const wt = wtEnemies[enemy.idx];
 			if (wt) {
 				const wtdiv = document.createElement("div");
 				wtdiv.className = `enemy-wt tier-${enemy.pet_base_tier}-background`;
