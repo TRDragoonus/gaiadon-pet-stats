@@ -57,6 +57,16 @@
 			bottom: 2px;
 			right: 2px;
 		}
+		.enemy-wt {
+			text-align: center;
+			width: fit-content;
+			margin: auto;
+			padding: 3px;
+			border-radius: 10px;
+			position: absolute;
+			bottom: 35px;
+			right: 2px;
+		}
 
 		.tier-0 {
 			border: 2px solid rgba(240, 240, 240, 0.8);
@@ -560,9 +570,10 @@ let stats = {
     Promise.all([
 		fetch("enemy_data.json").then(res => res.text()),
 		fetch("location_data.json").then(res => res.text()),
-		fetch("incursion_data.json").then(res => res.text())
+		fetch("incursion_data.json").then(res => res.text()),
+		fetch("manual_data.json").then(res => res.text())
 	])
-	.then(([enemyText, locationText, incursionText]) => {
+	.then(([enemyText, locationText, incursionText, manualJSON]) => {
 		// Trailing commas break json.
 		const cleanEnemyText = enemyText.replace(/,\s*(\}|\])/g, '$1');
 		const cleanLocationText = locationText.replace(/,\s*(\}|\])/g, '$1');
@@ -575,6 +586,7 @@ let stats = {
 		const factionEnemies = incursionData.faction_enemy_ids;
 		const factionEnemyData = incursionData.enemies;
 		const enemyKillsRequired = {};
+		const manualData = JSON.parse(manualJSON);
 
 		Object.values(factionEnemyData).forEach(factionBlock => {
 			Object.values(factionBlock).forEach(entry => {
@@ -615,6 +627,14 @@ let stats = {
 			rarity.textContent = rarities[enemy.pet_base_tier];
 			div.appendChild(rarity);
 
+			const wt = manualData[enemy.idx]?.wt;
+			if (wt) {
+				const wtdiv = document.createElement("div");
+				wtdiv.className = `enemy-wt tier-${enemy.pet_base_tier}-background`;
+				wtdiv.textContent = `WT${wt}`;
+				div.appendChild(wtdiv);
+			}
+
 			div.style.backgroundImage = `url(img/${enemy.tex})`;
 			div.style.backgroundSize = "contain";
 			div.style.backgroundRepeat = "no-repeat";
@@ -640,13 +660,18 @@ let stats = {
 				div.innerHTML += `<div class="section-header">• Passive Stats •</div>` + statSections["1"].join("");
 			}
 
-			let locationName = enemyToLocation[enemy.idx];
+			
+			let locationName = manualData[enemy.idx]?.location ?? '';
+			if (!locationName) {
+				locationName = enemyToLocation[enemy.idx];
+			}
 			const killsNeeded = enemyKillsRequired[enemy.idx];
 			if (killsNeeded > 0) {
 				locationName += ` ${killsNeeded}`;
 			}
 			const locDiv = document.createElement("div");
 			locDiv.className = "enemy-location";
+			
 			if (!locationName) {
 				locationName = "Festival Shop";
 			}

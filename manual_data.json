@@ -1,0 +1,116 @@
+{
+    "32": {
+        "name": "Mimic",
+        "location": "Onslaught"
+    },
+    "33": {
+        "name":"Umbral",
+        "location": "Boss Hunt"
+    },
+    "34": {
+        "name":"Vorshadoom",
+        "location": "Boss Hunt"
+    },
+    "35": {
+        "name":"Phantom Scourge",
+        "location": "Boss Hunt"
+    },
+    "36": {
+        "name":"Erebus",
+        "location": "Boss Hunt"
+    },
+    "37": {
+        "name":"Verdigris",
+        "location": "Boss Hunt"
+    },
+    "38": {
+        "name":"Leviathan",
+        "location": "Boss Hunt"
+    },
+    "56": {
+        "name":"Scorntide",
+        "location": "Boss Hunt"
+    },
+    "57": {
+        "name":"Venomfist",
+        "location": "Boss Hunt"
+    },
+    "58": {
+        "name":"Thornspire",
+        "location": "Boss Hunt"
+    },
+    "59": {
+        "name":"Viridrake",
+        "location": "Boss Hunt"
+    },
+    "60": {
+        "name":"Tricranix",
+        "location": "Boss Hunt"
+    },
+    "61": {
+        "name":"Aerithrax",
+        "location": "Boss Hunt"
+    },
+    "79": {
+        "name":"Thorgrim",
+        "location": "Boss Hunt"
+    },
+    "80": {
+        "name":"Irdan",
+        "location": "Boss Hunt"
+    },
+    "81": {
+        "name":"Dreadscale",
+        "location": "Boss Hunt"
+    },
+    "82": {
+        "name":"Thunderhide",
+        "location": "Boss Hunt"
+    },
+    "83": {
+        "name":"Cinderscribe",
+        "location": "Boss Hunt"
+    },
+    "84": {
+        "name":"Jinn",
+        "location": "Boss Hunt"
+    },
+    "85": {
+        "name":"Necros",
+        "location": "Onslaught"
+    },
+    "86": {
+        "name":"Ragnarok",
+        "location": "Onslaught"
+    },
+    "151": {
+        "name": "Clytaemestra",
+        "location": "Any M3 Faction",
+        "wt": 25
+    },
+    "153": {
+        "name": "Shikao",
+        "location": "Any M4 Faction",
+        "wt": 30
+    },
+    "155": {
+        "name": "Malakar",
+        "location": "Any T1 Faction",
+        "wt": 30
+    },
+    "156": {
+        "name": "Eldertide Sentinel",
+        "location": "Any T1 Faction",
+        "wt": 33
+    },
+    "157": {
+        "name": "Sir Denori of Doom",
+        "location": "Any T1 Faction",
+        "wt": 36
+    },
+    "160": {
+        "name": "Fen the Devourer",
+        "location": "Any T1 Faction",
+        "wt": 45
+    }
+}
