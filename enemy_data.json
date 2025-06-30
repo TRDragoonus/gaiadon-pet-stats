@@ -4449,7 +4449,7 @@
 				{"stat":65,"stat_type":0,"effect":0},
 				{"stat":61,"stat_type":2,"effect":0},
 				
-				{"stat":18,"stat_type":0,"effect":1},
+				{"stat":36,"stat_type":0,"effect":1, "boost":10},
 				{"stat":40,"stat_type":0,"effect":1},
 				{"stat":32,"stat_type":0,"effect":1},
 			],
@@ -4669,5 +4669,32 @@
 			"pet_base_skills":[],
 			"is_faction_neutral":true,
 		},
+		"161":{
+			"idx":"161",
+			"name":"Elder Mimic",
+			"title": "",
+			"tex":"161.png",
+			"family":"",
+			"loot":{
+				"Enums.MonsterRank.NORMAL":[
+					[{"w":"","item":"222","count":"","feature":204}]
+				],
+				"Enums.MonsterRank.ELITE":[
+					[{"w":"","item":"222","count":"","feature":204}]
+				],
+				"Enums.MonsterRank.CHAMPION":[
+					[{"w":"","item":"222","count":"","feature":204}]
+				]
+			},
+			"atk_spd":2.00,
+			"enemy_base_type":0,
+			"pet_card_item":"222",
+			"pet_base_stats":[
+				{"stat":84,"stat_type":0,"effect":0},
+				{"stat":85,"stat_type":0,"effect":0},
+			],
+			"pet_base_tier":0,
+			"pet_base_skills":[]
+		}
 	}
 }

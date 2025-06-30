@@ -106,5 +106,9 @@
     "160": {
         "name": "Fen the Devourer",
         "location": "Any T1 Faction"
+    },
+    "161": {
+        "name": "Elder Mimic",
+        "location": "Sealed Letter"
     }
 }
