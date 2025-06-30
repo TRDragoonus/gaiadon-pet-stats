@@ -742,6 +742,10 @@ let stats = {
 				const s = stats[stat.stat.toString()];
 				if (!s) return;
 				const displayValue = formatValue(stat.stat_type);
+                /* Mimic doesn't have third stat despite being in JSON */
+                if (enemyId == "32" && s.stat_type == 3) {
+                    return;
+                }
 				statSections[stat.effect].push(`
 					<div class="stat-row">
 						<span>${s.title.toUpperCase()} ${displayValue}</span>
