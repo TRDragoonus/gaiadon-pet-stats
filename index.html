@@ -743,7 +743,7 @@ let stats = {
 				if (!s) return;
 				const displayValue = formatValue(stat.stat_type);
                 /* Mimic doesn't have third stat despite being in JSON */
-                if (enemyId == "32" && s.stat_type == 3) {
+                if (enemy.idx == "32" && s.stat_type == 3) {
                     return;
                 }
 				statSections[stat.effect].push(`
