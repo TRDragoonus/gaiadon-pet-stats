@@ -1,0 +1,779 @@
+{
+  "0": {
+    "0": {
+      "BASE": {
+        "value": 0.004,
+        "level_incre": 5.0,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 0.01,
+        "level_incre": 0.30000000000000004,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 0.07,
+        "level_incre": 0.07,
+        "level_gap": 5.0
+      },
+      "MASTERY": {
+        "value": 5.0,
+        "level_incre": 0.1,
+        "level_gap": 3.0
+      }
+    },
+    "1": {
+      "BASE": {
+        "value": 0.004,
+        "level_incre": 5.0,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 0.01,
+        "level_incre": 0.35000000000000003,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 0.07,
+        "level_incre": 0.07,
+        "level_gap": 5.0
+      }
+    },
+    "2": {
+      "BASE": {
+        "value": 0.02,
+        "level_incre": 0.30000000000000004,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 2.0,
+        "level_incre": 1.0,
+        "level_gap": 4.0
+      }
+    },
+    "3": {
+      "BASE": {
+        "value": 0.5,
+        "level_incre": 0.05,
+        "level_gap": 5.0
+      }
+    },
+    "4": {
+      "BASE": {
+        "value": 0.01,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      }
+    },
+    "5": {
+      "BASE": {
+        "value": 0.1,
+        "level_incre": 0.1,
+        "level_gap": 2.0
+      }
+    },
+    "6": {
+      "BASE": {
+        "value": 0.1,
+        "level_incre": 5.0,
+        "level_gap": 2.0
+      }
+    },
+    "7": {
+      "BASE": {
+        "value": 0.15,
+        "level_incre": 0.05,
+        "level_gap": 2.0
+      }
+    },
+    "8": {
+      "BASE": {
+        "value": 0.2,
+        "level_incre": 2.0,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 0.1,
+        "level_incre": 0.05,
+        "level_gap": 5.0
+      }
+    },
+    "9": {
+      "MODIFIER": {
+        "value": 10.0,
+        "level_incre": 5.0,
+        "level_gap": 1.0
+      }
+    },
+    "10": {
+      "BASE": {
+        "value": 1.0,
+        "level_incre": 1.0,
+        "level_gap": 5.0
+      },
+      "MULTIPLIER": {
+        "value": 0.5,
+        "level_incre": 0.5,
+        "level_gap": 4.0
+      }
+    },
+    "11": {
+      "BASE": {
+        "value": 1.0,
+        "level_incre": 10.0,
+        "level_gap": 1.0
+      }
+    },
+    "12": {
+      "BASE": {
+        "value": 1.0,
+        "level_incre": 1.0,
+        "level_gap": 2.0
+      }
+    },
+    "13": {
+      "BASE": {
+        "value": 0.05,
+        "level_incre": 0.01,
+        "level_gap": 1.0
+      }
+    },
+    "14": {
+      "BASE": {
+        "value": 0.5,
+        "level_incre": 0.5,
+        "level_gap": 1.0
+      }
+    },
+    "15": {
+      "BASE": {
+        "value": 0.1,
+        "level_incre": 0.2,
+        "level_gap": 1.0
+      }
+    },
+    "16": {
+      "BASE": {
+        "value": 0.0001,
+        "level_incre": 0.05,
+        "level_gap": 1.0
+      }
+    },
+    "17": {
+      "BASE": {
+        "value": 0.1,
+        "level_incre": 1.0,
+        "level_gap": 5.0
+      }
+    },
+    "18": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.5,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 0.1,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 1.0,
+        "level_incre": 0.05,
+        "level_gap": 1.0
+      }
+    },
+    "19": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.5,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 0.1,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 1.0,
+        "level_incre": 0.05,
+        "level_gap": 1.0
+      }
+    },
+    "20": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.5,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 0.1,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 1.0,
+        "level_incre": 0.05,
+        "level_gap": 1.0
+      }
+    },
+    "21": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.5,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 0.1,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 1.0,
+        "level_incre": 0.05,
+        "level_gap": 1.0
+      }
+    },
+    "22": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.6,
+        "level_gap": 1.0
+      }
+    },
+    "23": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.6,
+        "level_gap": 1.0
+      }
+    },
+    "24": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.6,
+        "level_gap": 1.0
+      }
+    },
+    "25": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.6,
+        "level_gap": 1.0
+      }
+    },
+    "26": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.5,
+        "level_gap": 1.0
+      }
+    },
+    "27": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.5,
+        "level_gap": 1.0
+      }
+    },
+    "28": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.5,
+        "level_gap": 1.0
+      }
+    },
+    "29": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.5,
+        "level_gap": 1.0
+      }
+    },
+    "30": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.5,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 1.0,
+        "level_incre": 0.05,
+        "level_gap": 1.0
+      }
+    },
+    "31": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.5,
+        "level_gap": 1.0
+      }
+    },
+    "32": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.5,
+        "level_gap": 1.0
+      }
+    },
+    "33": {
+      "BASE": {
+        "value": 0.02,
+        "level_incre": 5.0,
+        "level_gap": 1.0
+      }
+    },
+    "34": {
+      "BASE": {
+        "value": 0.01,
+        "level_incre": 3.0,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 0.2,
+        "level_incre": 0.2,
+        "level_gap": 4.0
+      }
+    },
+    "35": {
+      "BASE": {
+        "value": 10.0,
+        "level_incre": 2.0,
+        "level_gap": 1.0
+      }
+    },
+    "36": {
+      "BASE": {
+        "value": 1.0,
+        "level_incre": 0.0,
+        "level_gap": 1.0
+      }
+    },
+    "37": {
+      "BASE": {
+        "value": 1.0,
+        "level_incre": 0.0,
+        "level_gap": 1.0
+      }
+    }
+  },
+  "1": {
+    "0": {
+      "BASE": {
+        "value": 0.05,
+        "level_incre": 1.5,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 0.5,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 0.01,
+        "level_incre": 0.01,
+        "level_gap": 5.0
+      },
+      "MASTERY": {
+        "value": 1.0,
+        "level_incre": 0.5,
+        "level_gap": 1.0
+      }
+    },
+    "1": {
+      "BASE": {
+        "value": 0.05,
+        "level_incre": 1.5,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 0.5,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 0.01,
+        "level_incre": 0.01,
+        "level_gap": 5.0
+      }
+    },
+    "38": {
+      "BASE": {
+        "value": 0.1,
+        "level_incre": 1.0,
+        "level_gap": 5.0
+      }
+    },
+    "2": {
+      "BASE": {
+        "value": 25.0,
+        "level_incre": 2.0,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 5.0,
+        "level_incre": 0.1,
+        "level_gap": 5.0
+      }
+    },
+    "3": {
+      "BASE": {
+        "value": 0.1,
+        "level_incre": 0.01,
+        "level_gap": 5.0
+      }
+    },
+    "4": {
+      "BASE": {
+        "value": 0.5,
+        "level_incre": 5.0,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 0.2,
+        "level_incre": 2.0,
+        "level_gap": 1.0
+      }
+    },
+    "5": {
+      "BASE": {
+        "value": 0.05,
+        "level_incre": 0.05,
+        "level_gap": 2.0
+      }
+    },
+    "6": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 1.0,
+        "level_gap": 2.0
+      }
+    },
+    "7": {
+      "BASE": {
+        "value": 0.05,
+        "level_incre": 0.01,
+        "level_gap": 2.0
+      },
+      "MULTIPLIER": {
+        "value": 0.0045,
+        "level_incre": 0.0,
+        "level_gap": 1.0
+      }
+    },
+    "8": {
+      "BASE": {
+        "value": 1.0,
+        "level_incre": 1.0,
+        "level_gap": 3.0
+      },
+      "MODIFIER": {
+        "value": 0.05,
+        "level_incre": 0.005,
+        "level_gap": 5.0
+      }
+    },
+    "9": {
+      "MODIFIER": {
+        "value": 5.0,
+        "level_incre": 2.0,
+        "level_gap": 1.0
+      }
+    },
+    "10": {
+      "BASE": {
+        "value": 1.0,
+        "level_incre": 1.0,
+        "level_gap": 10.0
+      }
+    },
+    "11": {
+      "BASE": {
+        "value": 1.0,
+        "level_incre": 10.0,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 0.5,
+        "level_incre": 1.0,
+        "level_gap": 1.0
+      }
+    },
+    "39": {
+      "BASE": {
+        "value": 1.0,
+        "level_incre": 10.0,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 0.1,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 0.1,
+        "level_incre": 0.1,
+        "level_gap": 5.0
+      }
+    },
+    "12": {
+      "BASE": {
+        "value": 1.0,
+        "level_incre": 1.0,
+        "level_gap": 3.0
+      }
+    },
+    "13": {
+      "BASE": {
+        "value": 0.025,
+        "level_incre": 0.75,
+        "level_gap": 1.0
+      }
+    },
+    "14": {
+      "BASE": {
+        "value": 0.2,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 0.3,
+        "level_incre": 0.1,
+        "level_gap": 4.0
+      }
+    },
+    "15": {
+      "BASE": {
+        "value": 3.0,
+        "level_incre": 0.05,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 3.0,
+        "level_incre": 0.1,
+        "level_gap": 4.0
+      },
+      "MULTIPLIER": {
+        "value": 0.005,
+        "level_incre": 0.0,
+        "level_gap": 4.0
+      }
+    },
+    "40": {
+      "BASE": {
+        "value": 1.0,
+        "level_incre": 0.0,
+        "level_gap": 1.0
+      }
+    },
+    "41": {
+      "BASE": {
+        "value": 0.01,
+        "level_incre": 0.6,
+        "level_gap": 1.0
+      }
+    },
+    "18": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 5.0,
+        "level_incre": 5.0,
+        "level_gap": 0.5
+      }
+    },
+    "19": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 5.0,
+        "level_incre": 5.0,
+        "level_gap": 0.5
+      }
+    },
+    "20": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 5.0,
+        "level_incre": 5.0,
+        "level_gap": 0.5
+      }
+    },
+    "21": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 5.0,
+        "level_incre": 5.0,
+        "level_gap": 0.5
+      }
+    },
+    "22": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      }
+    },
+    "23": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      }
+    },
+    "24": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      }
+    },
+    "25": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      }
+    },
+    "26": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      }
+    },
+    "27": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      }
+    },
+    "28": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      }
+    },
+    "29": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      }
+    },
+    "30": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      },
+      "MODIFIER": {
+        "value": 1.0,
+        "level_incre": 0.05,
+        "level_gap": 1.0
+      },
+      "MULTIPLIER": {
+        "value": 0.4,
+        "level_incre": 0.01,
+        "level_gap": 10.0
+      }
+    },
+    "16": {
+      "BASE": {
+        "value": 0.0001,
+        "level_incre": 0.01,
+        "level_gap": 1.0
+      }
+    },
+    "31": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      }
+    },
+    "32": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.1,
+        "level_gap": 1.0
+      }
+    },
+    "42": {
+      "BASE": {
+        "value": 1.0,
+        "level_incre": 1.0,
+        "level_gap": 2.0
+      }
+    },
+    "43": {
+      "BASE": {
+        "value": 1.0,
+        "level_incre": 0.0,
+        "level_gap": 2.0
+      }
+    },
+    "35": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 1.0,
+        "level_gap": 1.0
+      }
+    },
+    "44": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.0,
+        "level_gap": 0.0,
+        "frozen": true
+      }
+    },
+    "45": {
+      "BASE": {
+        "value": 3.0,
+        "level_incre": 0.5,
+        "level_gap": 5.0
+      }
+    },
+    "46": {
+      "BASE": {
+        "value": 15.0,
+        "level_incre": 0.0,
+        "level_gap": 0.0,
+        "frozen": true
+      }
+    },
+    "47": {
+      "BASE": {
+        "value": 5.0,
+        "level_incre": 0.0,
+        "level_gap": 0.0,
+        "frozen": true
+      }
+    },
+    "48": {
+      "BASE": {
+        "value": 2.0,
+        "level_incre": 0.0,
+        "level_gap": 0.0,
+        "frozen": true
+      }
+    }
+  }
+}

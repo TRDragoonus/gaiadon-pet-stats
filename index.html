@@ -644,6 +644,10 @@ let stats = {
     "85": {"title": "Double Gold Chance", "short": "Double Gold Chance", "desc": "Chance to gain double gold from monster kills."}
 };
 
+
+
+    
+
     const formatValue = (type) => {
         switch (type) {
             case 1: return "BONUS";
@@ -661,7 +665,8 @@ let stats = {
 		fetch("enemy_data.json").then(res => res.text()),
 		fetch("location_data.json").then(res => res.text()),
 		fetch("incursion_data.json").then(res => res.text()),
-		fetch("manual_data.json").then(res => res.text())
+		fetch("manual_data.json").then(res => res.text()),
+        fetch("pet_tier_stats.json").then(res => res.text())
 	])
 	.then(([enemyText, locationText, incursionText, manualJSON]) => {
 		// Trailing commas break json.
@@ -737,13 +742,13 @@ let stats = {
 			div.style.backgroundPosition = "right";
 
 			const statSections = { "0": [], "1": [] };
-
+            
 			enemy.pet_base_stats.forEach(stat => {
 				const s = stats[stat.stat.toString()];
 				if (!s) return;
 				const displayValue = formatValue(stat.stat_type);
                 /* Mimic doesn't have third stat despite being in JSON */
-                if (enemy.idx == "32" && s.stat_type == 3) {
+                if (enemy.idx == "32" && stat.stat_type == 3) {
                     return;
                 }
 				statSections[stat.effect].push(`
