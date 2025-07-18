@@ -952,7 +952,7 @@
 				{"stat":5,"stat_type":0,"effect":1},
 				{"stat":8,"stat_type":0,"effect":1},
 			],
-			"pet_base_tier":3,
+			"pet_base_tier":0,
 			"pet_base_skills":[],
 		},
 		"33":{
@@ -979,7 +979,7 @@
 				{"stat":1,"stat_type":0,"effect":1},
 				{"stat":1,"stat_type":1,"effect":1},
 			],
-			"pet_base_tier":4,
+			"pet_base_tier":0,
 			"pet_base_skills":[],
 		},
 		"34":{
@@ -1006,7 +1006,7 @@
 				{"stat":0,"stat_type":0,"effect":1},
 				{"stat":0,"stat_type":1,"effect":1},
 			],
-			"pet_base_tier":4,
+			"pet_base_tier":0,
 			"pet_base_skills":[],
 		},
 		"35":{
@@ -1033,7 +1033,7 @@
 				{"stat":5,"stat_type":0,"effect":1},
 				{"stat":7,"stat_type":0,"effect":1},
 			],
-			"pet_base_tier":4,
+			"pet_base_tier":0,
 			"pet_base_skills":[],
 		},
 		"36":{
@@ -1060,7 +1060,7 @@
 				{"stat":1,"stat_type":0,"effect":1},
 				{"stat":6,"stat_type":0,"effect":1},
 			],
-			"pet_base_tier":5,
+			"pet_base_tier":0,
 			"pet_base_skills":[],
 		},
 		"37":{
@@ -1087,7 +1087,7 @@
 				{"stat":0,"stat_type":0,"effect":1},
 				{"stat":8,"stat_type":0,"effect":1},
 			],
-			"pet_base_tier":5,
+			"pet_base_tier":0,
 			"pet_base_skills":[],
 		},
 		"38":{
@@ -1114,7 +1114,7 @@
 				{"stat":1,"stat_type":1,"effect":1},
 				{"stat":0,"stat_type":1,"effect":1},
 			],
-			"pet_base_tier":5,
+			"pet_base_tier":0,
 			"pet_base_skills":[],
 		},
 		
@@ -1655,7 +1655,7 @@
 				{"stat":4,"stat_type":0,"effect":1},
 				{"stat":20,"stat_type":1,"effect":1},
 			],
-			"pet_base_tier":4,
+			"pet_base_tier":1,
 			"pet_base_skills":[],
 		},
 		"57":{
@@ -1683,7 +1683,7 @@
 				{"stat":8,"stat_type":0,"effect":1},
 				{"stat":20,"stat_type":1,"effect":1},
 			],
-			"pet_base_tier":4,
+			"pet_base_tier":1,
 			"pet_base_skills":[],
 		},
 		"58":{
@@ -1711,7 +1711,7 @@
 				{"stat":0,"stat_type":1,"effect":1},
 				{"stat":14,"stat_type":0,"effect":1},
 			],
-			"pet_base_tier":4,
+			"pet_base_tier":1,
 			"pet_base_skills":[],
 		},
 		"59":{
@@ -1739,7 +1739,7 @@
 				{"stat":0,"stat_type":0,"effect":1},
 				{"stat":20,"stat_type":1,"effect":1},
 			],
-			"pet_base_tier":5,
+			"pet_base_tier":1,
 			"pet_base_skills":[],
 		},
 		"60":{
@@ -1767,7 +1767,7 @@
 				{"stat":0,"stat_type":1,"effect":1},
 				{"stat":20,"stat_type":1,"effect":1},
 			],
-			"pet_base_tier":5,
+			"pet_base_tier":1,
 			"pet_base_skills":[],
 		},
 		"61":{
@@ -1795,7 +1795,7 @@
 				{"stat":1,"stat_type":1,"effect":1},
 				{"stat":14,"stat_type":0,"effect":1},
 			],
-			"pet_base_tier":5,
+			"pet_base_tier":1,
 			"pet_base_skills":[],
 		},
 		
@@ -2336,7 +2336,7 @@
 				{"stat":4,"stat_type":0,"effect":1},
 				{"stat":20,"stat_type":1,"effect":1},
 			],
-			"pet_base_tier":4,
+			"pet_base_tier":2,
 			"pet_base_skills":[],
 		},
 		"80":{
@@ -2364,7 +2364,7 @@
 				{"stat":8,"stat_type":0,"effect":1},
 				{"stat":28,"stat_type":0,"effect":1},
 			],
-			"pet_base_tier":4,
+			"pet_base_tier":2,
 			"pet_base_skills":[],
 		},
 		"81":{
@@ -2392,7 +2392,7 @@
 				{"stat":0,"stat_type":1,"effect":1},
 				{"stat":14,"stat_type":0,"effect":1},
 			],
-			"pet_base_tier":4,
+			"pet_base_tier":2,
 			"pet_base_skills":[],
 		},
 		"82":{
@@ -2420,7 +2420,7 @@
 				{"stat":0,"stat_type":0,"effect":1},
 				{"stat":20,"stat_type":1,"effect":1},
 			],
-			"pet_base_tier":5,
+			"pet_base_tier":2,
 			"pet_base_skills":[],
 		},
 		"83":{
@@ -2448,7 +2448,7 @@
 				{"stat":0,"stat_type":1,"effect":1},
 				{"stat":28,"stat_type":0,"effect":1},
 			],
-			"pet_base_tier":5,
+			"pet_base_tier":2,
 			"pet_base_skills":[],
 		},
 		"84":{
@@ -2476,7 +2476,7 @@
 				{"stat":1,"stat_type":1,"effect":1},
 				{"stat":14,"stat_type":0,"effect":1},
 			],
-			"pet_base_tier":5,
+			"pet_base_tier":2,
 			"pet_base_skills":[],
 		},
 		
@@ -4369,7 +4369,7 @@
 		},
 		"151":{
 			"idx":"151",
-			"name":"Clytaemestra",
+			"name":"Clytaemestra, The Ancient",
 			"title": "",
 			"tex":"151.png",
 			"family":"",
@@ -4399,7 +4399,7 @@
 		"152":{
 			"idx":"152",
 			"name":"I am ROOT!!!",
-			"title": "",
+			"title": "WE ARE ROOT!!!",
 			"tex":"152.png",
 			"family":"",
 			"loot":{
@@ -4430,7 +4430,7 @@
 		},
 		"153":{
 			"idx":"153",
-			"name":"Shikao",
+			"name":"Shikao, The Sa(d)ge",
 			"title": "",
 			"tex":"153.png",
 			"family":"",
@@ -4695,6 +4695,37 @@
 			],
 			"pet_base_tier":0,
 			"pet_base_skills":[]
-		}
+		},
+		"162":{
+			"idx":"162",
+			"name":"Wansifu, Master of Madness",
+			"title": "",
+			"tex":"162.png",
+			"family":"",
+			"loot":{
+				"Enums.MonsterRank.TITAN":[
+					[{"w":"","item":"224","count":"","feature":204}],
+				]
+			},
+			"atk_spd":500.00,
+			"atk_bonus":500.0,
+			"hp_bonus":500.0,
+			"enemy_base_type":5,
+			"map_required":"",
+			"minions_location":[],
+			"pet_card_item":"224",
+			"pet_base_stats":[
+				{"stat":66,"stat_type":1,"effect":0,},
+				{"stat":19,"stat_type":1,"effect":0},
+				{"stat":7,"stat_type":1,"effect":0},
+				
+				{"stat":44,"stat_type":1,"effect":1},
+				{"stat":8,"stat_type":0,"effect":1,"boost":40},
+				{"stat":65,"stat_type":0,"effect":1},
+			],
+			"pet_base_tier":5,
+			"pet_base_skills":[],
+			"is_faction_neutral":true,
+		},
 	}
 }
