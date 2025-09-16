@@ -4727,5 +4727,178 @@
 			"pet_base_skills":[],
 			"is_faction_neutral":true,
 		},
+		"163":{
+			"idx":"163",
+			"name":"Scorvalk",
+			"title": "",
+			"tex":"163.png",
+			"family":"",
+			"loot":{
+				"Enums.MonsterRank.NORMAL":[
+					[{"w":"","item":"225","count":"","feature":204}]
+				],
+				"Enums.MonsterRank.ELITE":[
+					[{"w":"","item":"225","count":"","feature":204}]
+				],
+				"Enums.MonsterRank.CHAMPION":[
+					[{"w":"","item":"225","count":"","feature":204}]
+				]
+			},
+			"atk_spd":2.00,
+			"enemy_base_type":0,
+			"pet_card_item":"225",
+			"pet_base_stats":[
+				{"stat":48,"stat_type":1,"effect":1},
+				{"stat":84,"stat_type":0,"effect":1},
+				{"stat":32,"stat_type":1,"effect":1},
+				{"stat":28,"stat_type":3,"effect":1},
+				{"stat":64,"stat_type":0,"effect":1},
+				{"stat":61,"stat_type":1,"effect":1},
+				
+			],
+			"pet_base_tier":0,
+			"pet_base_skills":[]
+		},
+		"164":{
+			"idx":"164",
+			"name":"Cindralis",
+			"title": "",
+			"tex":"164.png",
+			"family":"",
+			"loot":{
+				"Enums.MonsterRank.TITAN":[
+					[{"w":"","item":"231","count":"","feature":204}],
+				]
+			},
+			"atk_spd":2.00,
+			"enemy_base_type":5,
+			"map_required":"",
+			"minions_location":[],
+			"pet_card_item":"231",
+			"pet_base_stats":[
+				{"stat":48,"stat_type":3,"effect":0},
+				{"stat":1,"stat_type":3,"effect":0},
+				{"stat":28,"stat_type":2,"effect":0},
+				
+				{"stat":64,"stat_type":1,"effect":1},
+				{"stat":48,"stat_type":2,"effect":1},
+				{"stat":40,"stat_type":1,"effect":1},
+			],
+			"pet_base_tier":5,
+			"pet_base_skills":[],
+		},
+		"165":{
+			"idx":"165",
+			"name":"Abyros",
+			"title": "",
+			"tex":"165.png",
+			"family":"",
+			"loot":{
+				"Enums.MonsterRank.TITAN":[
+					[{"w":"","item":"232","count":"","feature":204}],
+				]
+			},
+			"atk_spd":2.00,
+			"enemy_base_type":5,
+			"map_required":"",
+			"minions_location":[],
+			"pet_card_item":"232",
+			"pet_base_stats":[
+				{"stat":49,"stat_type":3,"effect":0},
+				{"stat":0,"stat_type":3,"effect":0},
+				{"stat":6,"stat_type":1,"effect":0},
+				
+				{"stat":36,"stat_type":0,"effect":1, "boost":30},
+				{"stat":49,"stat_type":2,"effect":1},
+				{"stat":34,"stat_type":0,"effect":1,"boost":100},
+			],
+			"pet_base_tier":5,
+			"pet_base_skills":[],
+		},
+		"166":{
+			"idx":"166",
+			"name":"Vorgrath",
+			"title": "",
+			"tex":"166.png",
+			"family":"",
+			"loot":{
+				"Enums.MonsterRank.TITAN":[
+					[{"w":"","item":"233","count":"","feature":204}],
+				]
+			},
+			"atk_spd":2.00,
+			"enemy_base_type":5,
+			"map_required":"",
+			"minions_location":[],
+			"pet_card_item":"233",
+			"pet_base_stats":[
+				{"stat":51,"stat_type":3,"effect":0},
+				{"stat":0,"stat_type":3,"effect":0},
+				{"stat":64,"stat_type":0,"effect":0, "boost":0.6},
+				
+				{"stat":44,"stat_type":1,"effect":1},
+				{"stat":51,"stat_type":2,"effect":1},
+				{"stat":28,"stat_type":2,"effect":1},
+			],
+			"pet_base_tier":5,
+			"pet_base_skills":[],
+		},
+		"167":{
+			"idx":"167",
+			"name":"Thrynn",
+			"title": "",
+			"tex":"167.png",
+			"family":"",
+			"loot":{
+				"Enums.MonsterRank.TITAN":[
+					[{"w":"","item":"234","count":"","feature":204}],
+				]
+			},
+			"atk_spd":2.00,
+			"enemy_base_type":5,
+			"map_required":"",
+			"minions_location":[],
+			"pet_card_item":"234",
+			"pet_base_stats":[
+				{"stat":50,"stat_type":3,"effect":0},
+				{"stat":1,"stat_type":3,"effect":0},
+				{"stat":8,"stat_type":1,"effect":0},
+				
+				{"stat":0,"stat_type":3,"effect":1},
+				{"stat":50,"stat_type":2,"effect":1},
+				{"stat":19,"stat_type":1,"effect":1},
+			],
+			"pet_base_tier":5,
+			"pet_base_skills":[],
+		},
+		"168":{
+			"idx":"168",
+			"name":"Dragoonus, Lord of Poor Decisions",
+			"title": "",
+			"tex":"168.png",
+			"family":"",
+			"loot":{
+				"Enums.MonsterRank.TITAN":[
+					[{"w":"","item":"235","count":"","feature":204}],
+				]
+			},
+			"atk_spd":2.00,
+			"enemy_base_type":5,
+			"map_required":"",
+			"minions_location":[],
+			"pet_card_item":"235",
+			"pet_base_stats":[
+				{"stat":3,"stat_type":3,"effect":0},
+				{"stat":2,"stat_type":1,"effect":0, "boost":200},
+				{"stat":48,"stat_type":3,"effect":0,"boost":5},
+				
+				{"stat":36,"stat_type":0,"effect":1, "boost":50},
+				{"stat":67,"stat_type":3,"effect":1},
+				{"stat":47,"stat_type":2,"effect":1},
+			],
+			"pet_base_tier":5,
+			"pet_base_skills":[],
+			"is_faction_neutral":true,
+		},
 	}
 }

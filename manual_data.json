@@ -112,7 +112,11 @@
         "location": "Sealed Letter"
     },
     "162": {
-        "name": "wansifu",
+        "name": "Wansifu",
+        "location": "No Man's Domain"
+    },
+    "168": {
+        "name": "Dragoonus",
         "location": "No Man's Domain"
     }
 }
