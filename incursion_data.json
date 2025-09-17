@@ -24,7 +24,7 @@
 		"21":{"min_tier":45,"points":[8,9],"stat_multi":3,"monster_rank":5, "kills_needed":30000, "first_location":"No Man's Domain"},
 		"22":{"min_tier":55,"points":[9,9],"stat_multi":3,"monster_rank":5, "kills_needed":34000, "first_location":"No Man's Domain"},
 		"23":{"min_tier":58,"points":[10,9],"stat_multi":3,"monster_rank":5, "kills_needed":50000, "first_location":"No Man's Domain"},
-		"24":{"min_tier":62,"points":[11,9],"stat_multi":3,"monster_rank":5, "kills_needed":65000, "first_location":"No Man's Domain"},
+		"24":{"min_tier":63,"points":[11,9],"stat_multi":3,"monster_rank":5, "kills_needed":65000, "first_location":"No Man's Domain"},
 	},
 	"factions":{
 		"0":{
@@ -243,14 +243,14 @@
 				"166":{
 					"penetration":{"59":5000,},
 					"resistance":{"52":25000,"53":25000,"54":6000,"55":25000},
-					"damage":{"51":20000,},"dread":850,"unique":true,"kills_needed":45000,
+					"damage":{"51":20000,},"dread":850,"unique":true,"kills_needed":50000,
 				},
 			},
 			"24":{
 				"168":{
 					"penetration":{"59":5000,},
 					"resistance":{"52":25000,"53":25000,"54":6000,"55":25000},
-					"damage":{"51":20000,},"dread":850,"unique":true,"kills_needed":60000,
+					"damage":{"51":20000,},"dread":850,"unique":true,"kills_needed":65000,
 				},
 			},
 		},
@@ -420,14 +420,14 @@
 				"164":{
 					"penetration":{"56":5000,},
 					"resistance":{"52":25000,"53":6000,"54":25000,"55":25000},
-					"damage":{"48":20000,},"dread":850,"unique":true,"kills_needed":45000,
+					"damage":{"48":20000,},"dread":850,"unique":true,"kills_needed":50000,
 				},
 			},
 			"24":{
 				"168":{
 					"penetration":{"56":5000,},
 					"resistance":{"52":25000,"53":6000,"54":25000,"55":25000},
-					"damage":{"48":20000,},"dread":850,"unique":true,"kills_needed":60000,
+					"damage":{"48":20000,},"dread":850,"unique":true,"kills_needed":65000,
 				},
 			},
 		},
@@ -597,14 +597,14 @@
 				"167":{
 					"penetration":{"58":5000,},
 					"resistance":{"52":25000,"53":25000,"54":25000,"55":6000},
-					"damage":{"50":20000,},"dread":850,"unique":true,"kills_needed":45000,
+					"damage":{"50":20000,},"dread":850,"unique":true,"kills_needed":50000,
 				},
 			},
 			"24":{
 				"168":{
 					"penetration":{"58":5000,},
 					"resistance":{"52":25000,"53":25000,"54":25000,"55":6000},
-					"damage":{"48":20000,},"dread":850,"unique":true,"kills_needed":60000,
+					"damage":{"48":20000,},"dread":850,"unique":true,"kills_needed":65000,
 				},
 			},
 		},
@@ -774,14 +774,14 @@
 				"165":{
 					"penetration":{"57":5000,},
 					"resistance":{"52":6000,"53":25000,"54":25000,"55":25000},
-					"damage":{"49":20000,},"dread":850,"unique":true,"kills_needed":45000,
+					"damage":{"49":20000,},"dread":850,"unique":true,"kills_needed":50000,
 				},
 			},
 			"24":{
 				"168":{
 					"penetration":{"57":5000,},
 					"resistance":{"52":6000,"53":25000,"54":25000,"55":25000},
-					"damage":{"49":20000,},"dread":850,"unique":true,"kills_needed":60000,
+					"damage":{"49":20000,},"dread":850,"unique":true,"kills_needed":65000,
 				},
 			},
 		
