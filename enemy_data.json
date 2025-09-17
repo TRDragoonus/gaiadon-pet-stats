@@ -4566,7 +4566,8 @@
 			"pet_base_stats":[
 				{"stat":1,"stat_type":3,"effect":0, "boost":2},
 				{"stat":61,"stat_type":2,"effect":0,"boost":20},
-				{"stat":3,"stat_type":0,"effect":0, "boost":100},
+				{"stat":92,"stat_type":0,"effect":0},
+				
 				
 				{"stat":1,"stat_type":2,"effect":1},
 				{"stat":64,"stat_type":2,"effect":1},
